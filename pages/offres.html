@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samacallcenter</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="../public/css/aos.css">
+</head>
+<body>
+    <div class="preloader">
+        <!-- From Uiverse.io by mrhyddenn --> 
+        <div class="loader-box">
+            <div class="loading-wrapper">
+                <div class="loader">
+                    <div class="loader-inner">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="top">
+            <div class="top-content">
+                <div class="top-left">
+                    <ul class="contact-info">
+                        <li><i class="fa-solid fa-phone"></i> +221 33 123 45 67</li>
+                        <li><i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:samacallcenter@gmail.com">samacallcenter@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="search-form">
+                <form action="#" method="get">
+                    <input type="text" name="search" placeholder="Recherchez par mots-clés">
+                    <button type="submit"><i class="fa-solid fa-search"></i></button>
+                </form>
+            </div>
+        </div>
+        <div class="navbar">
+            <a href="/" class="logo"><img src="../logo.svg" alt="logo du site"></a>
+            <nav>
+                <ul class="menu">
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="#" class="active">Offres d'emplois</a></li>
+                    <li><a href="#">Centres d'appels</a></li>
+                    <li><a href="#">Recruteurs</a></li>
+                    <li><a href="#">Candidats</a></li>
+                    <li><a href="#">Actualités</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="banner-interne">
+            <div class="banner-title">
+                <span>Liste des offres d'emploi</span>
+                <div class="breadcrumb">
+                    <a href="#">Accueil</a> <i class="fa-solid fa-chevron-right"></i> <span>Offres d'emploi</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+      <section class="job-catalog">
+       <div class="sticky">
+            <form class="job-filter">
+                <h2>Types d'entreprise</h2>
+                <div class="input-group">
+                    <input type="checkbox" name="tous" id="tous" value="tous">
+                    <label for="tous">Tous</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="telecom" id="telecom" value="telecom">
+                    <label for="telecom">Télécom</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="banque" id="banque" value="banque">
+                    <label for="banque">Banque</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="assurance"
+                    id="assurance" value="assurance">
+                    <label for="assurance">Assurance</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="service" id="service" value="service">
+                    <label for="service">Service</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="informatique" id="informatique" value="informatique">
+                    <label for="informatique">Informatique</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="industrie" id="industrie" value="industrie">
+                    <label for="industrie">Industrie</label>
+                </div>
+                <h2>Location / Ville</h2>
+                <div class="input-group">
+                    <input type="checkbox" name="tous" id="tous" value="tous">
+                    <label for="tous">Tous</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="dakar" id="dakar" value="dakar">
+                    <label for="dakar">Dakar</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="thies" id="thies" value="thies">
+                    <label for="thies">Thiès</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="saint-louis" id="saint-louis" value="saint-louis">
+                    <label for="saint-louis">Saint-Louis</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="ziguinchor" id="ziguinchor" value="ziguinchor">
+                    <label for="ziguinchor">Ziguinchor</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="kaolack" id="kaolack" value="kaolack">
+                    <label for="kaolack">Kaolack</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="tambacounda" id="tambacounda" value="tambacounda">
+                    <label for="tambacounda">Tambacounda</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="kolda" id="kolda" value="kolda">
+                    <label for="kolda">Kolda</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="matam" id="matam" value="matam">
+                    <label for="matam">Matam</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="sedhiou" id="sedhiou" value="sedhiou">
+                    <label for="sedhiou">Sédhiou</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="kaffrine" id="kaffrine" value="kaffrine">
+                    <label for="kaffrine">Kaffrine</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="kédougou" id="kédougou" value="kédougou">
+                    <label for="kédougou">Kédougou</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="fatick" id="fatick" value="fatick">
+                    <label for="fatick">Fatick</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="louga" id="louga" value="louga">
+                    <label for="louga">Louga</label>
+                </div>
+                <div class="input-group">
+                    <input type="checkbox" name="diourbel" id="diourbel" value="diourbel">
+                    <label for="diourbel">Diourbel</label>
+                </div>
+                <button type="submit" class="btn">Filtrer</button>
+            </form>
+       </div>
+        <div class="job-list">
+            <div class="job" data-aos="zoom-in" data-aos-duration="500">
+                <div class="job-content">
+                    <div class="job-header">
+                        <div class="company-logo"><img src="../public/images/companies/01.png" alt="job image"></div>
+                        <div class="job-info">
+                            <h3 class="job-title">Télévendeur</h3>
+                            <p class="job-description">
+                                <span class="deadline"><b>Deadline : </b> 01 Déc, 2025</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <span class="time">Temps plein</span>
+                        <a href="#" class="btn-default">Postuler</a>
+                    </div>
+                </div>
+            </div>
+            <div class="job" data-aos="zoom-in" data-aos-duration="500">
+                <div class="job-content">
+                    <div class="job-header">
+                        <div class="company-logo"><img src="../public/images/companies/02.png" alt="job image"></div>
+                        <div class="job-info">
+                            <h3 class="job-title">Chargé de clientèle</h3>
+                            <p class="job-description">
+                                <span class="deadline"><b>Deadline : </b> 01 Déc, 2025</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <span class="time">Temps plein</span>
+                        <a href="#" class="btn-default">Postuler</a>
+                    </div>
+                </div>
+            </div>
+            <div class="job" data-aos="zoom-in" data-aos-duration="500">
+                <div class="job-content">
+                    <div class="job-header">
+                        <div class="company-logo"><img src="../public/images/companies/03.png" alt="job image"></div>
+                        <div class="job-info">
+                            <h3 class="job-title">Support technique (Helpdesk)</h3>
+                            <p class="job-description">
+                                <span class="deadline"><b>Deadline : </b> 01 Déc, 2025</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <span class="time">Temps plein</span>
+                        <a href="#" class="btn-default">Postuler</a>
+                    </div>
+                </div>
+            </div>
+            <div class="job" data-aos="zoom-in" data-aos-duration="500">
+                <div class="job-content">
+                    <div class="job-header">
+                        <div class="company-logo"><img src="../public/images/companies/04.png" alt="job image"></div>
+                        <div class="job-info">
+                            <h3 class="job-title">Téléconseiller / Téléopérateur</h3>
+                            <p class="job-description">
+                                <span class="deadline"><b>Deadline : </b> 01 Déc, 2025</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <span class="time mitemps">Mi-temps</span>
+                        <a href="#" class="btn-default">Postuler</a>
+                    </div>
+                </div>
+            </div>
+            <div class="job" data-aos="zoom-in" data-aos-duration="500">
+                <div class="job-content">
+                    <div class="job-header">
+                        <div class="company-logo"><img src="../public/images/companies/05.png" alt="job image"></div>
+                        <div class="job-info">
+                            <h3 class="job-title">Superviseur</h3>
+                            <p class="job-description">
+                                <span class="deadline"><b>Deadline : </b> 01 Déc, 2025</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <span class="time">Temps plein</span>
+                        <a href="#" class="btn-default">Postuler</a>
+                    </div>
+                </div>
+            </div>
+            <div class="job" data-aos="zoom-in" data-aos-duration="500">
+                <div class="job-content">
+                    <div class="job-header">
+                        <div class="company-logo"><img src="../public/images/companies/06.png" alt="job image"></div>
+                        <div class="job-info">
+                            <h3 class="job-title">Modérateur chat</h3>
+                            <p class="job-description">
+                                <span class="deadline"><b>Deadline : </b> 01 Déc, 2025</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <span class="time">Temps plein</span>
+                        <a href="#" class="btn-default">Postuler</a>
+                    </div>
+                </div>
+            </div>
+            <div class="job" data-aos="zoom-in" data-aos-duration="500">
+                <div class="job-content">
+                    <div class="job-header">
+                        <div class="company-logo"><img src="../public/images/companies/07.png" alt="job image"></div>
+                        <div class="job-info">
+                            <h3 class="job-title">Responsable plateau</h3>
+                            <p class="job-description">
+                                <span class="deadline"><b>Deadline : </b> 01 Déc, 2025</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <span class="time">Temps plein</span>
+                        <a href="#" class="btn-default">Postuler</a>
+                    </div>
+                </div>
+            </div>
+            <div class="job" data-aos="zoom-in" data-aos-duration="500">
+                <div class="job-content">
+                    <div class="job-header">
+                        <div class="company-logo"><img src="../public/images/companies/08.png" alt="job image"></div>
+                        <div class="job-info">
+                            <h3 class="job-title">Téléconseiller</h3>
+                            <p class="job-description">
+                                <span class="deadline"><b>Deadline : </b> 01 Déc, 2025</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <span class="time mitemps">Mi-temps</span>
+                        <a href="#" class="btn-default">Postuler</a>
+                    </div>
+                </div>
+            </div>
+            <div class="job" data-aos="zoom-in" data-aos-duration="500">
+                <div class="job-content">
+                    <div class="job-header">
+                        <div class="company-logo"><img src="../public/images/companies/09.png" alt="job image"></div>
+                        <div class="job-info">
+                            <h3 class="job-title">Téléconseiller</h3>
+                            <p class="job-description">
+                                <span class="deadline"><b>Deadline : </b> 01 Déc, 2025</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <span class="time">Temps plein</span>
+                        <a href="#" class="btn-default">Postuler</a>
+                    </div>
+                </div>
+            </div>
+            <div class="job" data-aos="zoom-in" data-aos-duration="500">
+                <div class="job-content">
+                    <div class="job-header">
+                        <div class="company-logo"><img src="../public/images/companies/10.png" alt="job image"></div>
+                        <div class="job-info">
+                            <h3 class="job-title">Téléconseiller</h3>
+                            <p class="job-description">
+                                <span class="deadline"><b>Deadline : </b> 01 Déc, 2025</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <span class="time mitemps">Mi-temps</span>
+                        <a href="#" class="btn-default">Postuler</a>
+                    </div>
+                </div>
+            </div>
+            <div class="job" data-aos="zoom-in" data-aos-duration="500">
+                <div class="job-content">
+                    <div class="job-header">
+                        <div class="company-logo"><img src="../public/images/companies/11.png" alt="job image"></div>
+                        <div class="job-info">
+                            <h3 class="job-title">Téléconseiller</h3>
+                            <p class="job-description">
+                                <span class="deadline"><b>Deadline : </b> 01 Déc, 2025</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <span class="time">Temps plein</span>
+                        <a href="#" class="btn-default">Postuler</a>
+                    </div>
+                </div>
+            </div>
+            <div class="job" data-aos="zoom-in" data-aos-duration="500">
+                <div class="job-content">
+                    <div class="job-header">
+                        <div class="company-logo"><img src="../public/images/companies/12.png" alt="job image"></div>
+                        <div class="job-info">
+                            <h3 class="job-title">Opérateur de saisie</h3>
+                            <p class="job-description">
+                                <span class="deadline"><b>Deadline : </b> 01 Déc, 2025</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <span class="time mitemps">Mi-temps</span>
+                        <a href="#" class="btn-default">Postuler</a>
+                    </div>
+                </div>
+            </div>
+            <div class="job" data-aos="zoom-in" data-aos-duration="500">
+                <div class="job-content">
+                    <div class="job-header">
+                        <div class="company-logo"><img src="../public/images/companies/13.png" alt="job image"></div>
+                        <div class="job-info">
+                            <h3 class="job-title">Quality Analyst (QA)</h3>
+                            <p class="job-description">
+                                <span class="deadline"><b>Deadline : </b> 01 Déc, 2025</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <span class="time">Temps plein</span>
+                        <a href="#" class="btn-default">Postuler</a>
+                    </div>
+                </div>
+            </div>
+            <div class="job" data-aos="zoom-in" data-aos-duration="500">
+                <div class="job-content">
+                    <div class="job-header">
+                        <div class="company-logo"><img src="../public/images/companies/14.png" alt="job image"></div>
+                        <div class="job-info">
+                            <h3 class="job-title">Quality Analyst (QA)</h3>
+                            <p class="job-description">
+                                <span class="deadline"><b>Deadline : </b> 01 Déc, 2025</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <span class="time mitemps">Mi-temps</span>
+                        <a href="#" class="btn-default">Postuler</a>
+                    </div>
+                </div>
+            </div>
+            <div class="job" data-aos="zoom-in" data-aos-duration="500">
+                <div class="job-content">
+                    <div class="job-header">
+                        <div class="company-logo"><img src="../public/images/companies/01.png" alt="job image"></div>
+                        <div class="job-info">
+                            <h3 class="job-title">Quality Analyst (QA)</h3>
+                            <p class="job-description">
+                                <span class="deadline"><b>Deadline : </b> 01 Déc, 2025</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <span class="time">Temps plein</span>
+                        <a href="#" class="btn-default">Postuler</a>
+                    </div>
+                </div>
+            </div>
+            <div class="job" data-aos="zoom-in" data-aos-duration="500">
+                <div class="job-content">
+                    <div class="job-header">
+                        <div class="company-logo"><img src="../public/images/companies/04.png" alt="job image"></div>
+                        <div class="job-info">
+                            <h3 class="job-title">Quality Analyst (QA)</h3>
+                            <p class="job-description">
+                                <span class="deadline"><b>Deadline : </b> 01 Déc, 2025</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="btn-group">
+                        <span class="time mitemps">Mi-temps</span>
+                        <a href="#" class="btn-default">Postuler</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-menu" data-aos="fade-up" data-aos-duration="500">
+                    <h3>Accés rapide</h3>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="#" class="active">Offres d'emplois</a></li>
+                        <li><a href="#">Centres d'appels</a></li>
+                        <li><a href="#">Recruteurs</a></li>
+                        <li><a href="#">Candidats</a></li>
+                        <li><a href="#">Actualités</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-coordonnees" data-aos="fade-up" data-aos-duration="500">
+                    <h3>Coordonnées</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-map-marker-alt"></i> 1234 Rue de la République, Dakar, Sénégal</li>
+                        <li><i class="fa-solid fa-phone"></i> +221 33 123 45 67</li>
+                        <li><i class="fa-solid fa-envelope"></i> samacallcenter@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="fast-search" data-aos="fade-up" data-aos-duration="500">
+                    <h3>Recherche rapide</h3>
+                   <ul>
+                    <li><a href="#">Emission d'appels</a></li>
+                    <li><a href="#">Réception d'appels</a></li>
+                    <li><a href="#">Assurances</a></li>
+                    <li><a href="#">Assistance technique</a></li>
+                    <li><a href="#">Création de trafic</a></li>
+                    <li><a href="#">Autres</a></li>
+                   </ul>
+                </div>
+                <div class="footer-logo" data-aos="fade-up" data-aos-duration="500">
+                    <img src="../logo.svg" alt="logo du site">
+                    <span>Samacallcenter est la plateforme de recrutement N°1 au Sénégal dédié aux centres d'appels. Son objectif principal est de mettre en relation les meilleurs recruteurs avec les bons candidats et faciliter le processus de recrutement.</span>
+                    <ul class="social-media">
+                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-legal">
+                <p>© 2025 Samacallcenter. Tous droits réservés.</p>
+                <p>Design by MMD</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script>
+        $(document).ready(function () {
+        //initialize swiper when document ready
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true,
+            spaceBetween: 0,
+            speed: 1000,
+            effect: 'fade',
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            }
+        })
+
+        var swiper = new Swiper('.swiper-company',{
+		slidesPerView: 4,
+		autoplay: true,
+		speed: 1000,
+		loop: true,
+		spaceBetween: 20, //init: false,
+		navigation: { nextEl: '.button-next', prevEl: '.button-prev' },
+		breakpoints: {
+			1290: { slidesPerView: 2, spaceBetween: 40 },
+			768: { slidesPerView: 2, spaceBetween: 30 },
+			640: { slidesPerView: 1, spaceBetween: 20 },
+			320: { slidesPerView: 1, spaceBetween: 10 }
+		}
+	});
+
+    });
+    // $('.preloader').fadeOut(1000);
+    </script>
+    <script src="../public/js/script.js"></script>
+    <script src="../public/js/aos.js"></script>
+</body>
+</html>
