@@ -15,6 +15,21 @@
     box-sizing: border-box;
 }
 
+section.offre .description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+section.offre .description ul {
+    list-style: none;
+    padding-left: 30px;
+    line-height: 1.7;
+}
+
 .input-group {
     display: flex;
     align-items: center;
@@ -259,7 +274,7 @@ h3.news-title {
 
 section.job-catalog .job-list {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 40px;
+    grid-gap: 20px;
 }
 .news-list {
     display: grid;
@@ -268,8 +283,10 @@ section.job-catalog .job-list {
 }
 .job-list .job{
     padding: 0px 0px 0px 0;
-    border: 1px solid #2da1a938;
+    /* border: 1px solid #2da1a938; */
     border-radius: var(--radius);
+    background: var(--color0);
+    box-shadow: 1px 1px 50px #0000000d;
 }
 .news {
     display: flex;
@@ -644,6 +661,18 @@ section{
     padding: 5% 10%;
 }
 
+section.offre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+section.offre .img-content {}
+
+section.offre .img-content:before {
+    display: none;
+}
+
 section.job-catalog {
     display: grid;
     grid-template-columns: 1fr 3fr;
@@ -975,6 +1004,9 @@ section.section.section-1 .container {
     object-fit: cover;
 }
 
+
+section.offre .img-content img {
+}
 /* main style end */
 /* footer style begin */
 footer {
